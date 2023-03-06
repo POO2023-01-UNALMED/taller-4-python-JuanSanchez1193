@@ -9,8 +9,8 @@ class Grupo:
         self.listadoAlumnos = estudiantes
 
     def listadoAsignaturas(self, **kwargs):
-        for x,y  in kwargs.items():
-            self._asignaturas.append(Asignatura(x, y))
+        for numasig,asignatura  in kwargs.items():
+            self._asignaturas.append(Asignatura(asignatura))
 
     def agregarAlumno(self, alumno, lista=None):
         if lista ==None:
